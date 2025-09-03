@@ -16,27 +16,27 @@
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name:  {{ template "conduwuit.fullname" . }}
+  name:  {{ template "tuwunel.fullname" . }}
   labels:
-    {{- include "conduwuit.labels" . | nindent 4 }}
+    {{- include "tuwunel.labels" . | nindent 4 }}
 spec:
   replicas: 1
-  serviceName: {{ template "conduwuit.fullname" . }}
+  serviceName: {{ template "tuwunel.fullname" . }}
   podManagementPolicy: Parallel
   selector:
     matchLabels:
-      {{- include "conduwuit.labels" . | nindent 6 }}
+      {{- include "tuwunel.labels" . | nindent 6 }}
   template:
     metadata:
       labels:
-        {{- include "conduwuit.labels" . | nindent 8 }}
+        {{- include "tuwunel.labels" . | nindent 8 }}
     spec:
       securityContext:
         sysctls:
           - name: net.ipv4.ip_unprivileged_port_start
             value: "0"
       containers:
-        - name: conduwuit
+        - name: tuwunel
           image: "{{ .Values.image.repository }}:{{ tpl .Values.image.tag . }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
@@ -101,7 +101,7 @@ spec:
         - name: data
           {{- if .Values.persistence.data.enabled }}
           persistentVolumeClaim:
-            claimName: {{ .Values.persistence.data.existingClaim | default (printf "%s-%s" (include "conduwuit.fullname" .) "data") }}
+            claimName: {{ .Values.persistence.data.existingClaim | default (printf "%s-%s" (include "tuwunel.fullname" .) "data") }}
           {{- else }}
           emptyDir: {}
           {{- end }}

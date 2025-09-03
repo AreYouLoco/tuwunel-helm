@@ -2,9 +2,9 @@
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: {{ template "conduwuit.fullname" . }}-data
+  name: {{ template "tuwunel.fullname" . }}-data
   labels:
-    {{- include "conduwuit.labels" . | nindent 4 }}
+    {{- include "tuwunel.labels" . | nindent 4 }}
 spec:
   accessModes:
     - {{ .Values.persistence.data.accessMode | quote }}

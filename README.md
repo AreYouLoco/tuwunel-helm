@@ -24,7 +24,7 @@ helm delete my-release
 The command removes all the Kubernetes components associated with the chart and deletes the release.
 
 ## Configuration
-The following tables lists the configurable parameters of the conduwuit chart and their default values.
+The following tables lists the configurable parameters of the tuwunel chart and their default values.
 
 | Parameter                          | Description                                                                                | Default                 |
 | ---------------------------------- | ------------------------------------------------------------------------------------------ | ----------------------- |
@@ -48,7 +48,7 @@ The following tables lists the configurable parameters of the conduwuit chart an
 | `ingress.class`                    | Ingress class (included in annotations)                                                    | ``                      |
 | `ingress.annotations`              | Ingress annotations                                                                        | `{}`                    |
 | `ingress.path`                     | Ingress path                                                                               | `/`                     |
-| `ingress.hosts`                    | Ingress accepted hostnames                                                                 | `[conduwuit]`           |
+| `ingress.hosts`                    | Ingress accepted hostnames                                                                 | `[tuwunel]`           |
 | `ingress.tls`                      | Whether or not to configure TLS for the ingerss                                            | `false`                 |
 | `persistence.data.enabled`         | Use persistent volume to store data                                                        | `true`                  |
 | `persistence.data.size`            | Size of persistent volume claim                                                            | `1Gi`                   |

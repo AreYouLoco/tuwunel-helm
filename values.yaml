@@ -1,5 +1,5 @@
 image:
-  repository: girlbossceo/conduwuit
+  repository: girlbossceo/tuwunel
   tag: "v0.4.3-d875e0c1c00d8e42b83dd562c3945c077898746d"
   pullPolicy: IfNotPresent
 
@@ -38,7 +38,7 @@ ingress:
   annotations: {}
   path: /
   hosts:
-    - conduwuit
+    - tuwunel
   tls: false
 
 ## Persist configuration to a persistent volume

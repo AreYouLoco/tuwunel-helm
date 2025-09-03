@@ -5,9 +5,9 @@ metadata:
   annotations:
     {{- toYaml .Values.service.annotations | nindent 4 }}
   {{- end }}
-  name: {{ template "conduwuit.fullname" . }}
+  name: {{ template "tuwunel.fullname" . }}
   labels:
-    {{- include "conduwuit.labels" . | nindent 4 }}
+    {{- include "tuwunel.labels" . | nindent 4 }}
 spec:
   clusterIP: {{ .Values.service.clusterIP | quote }}
   {{- if .Values.service.externalIPs }}
@@ -27,6 +27,6 @@ spec:
       port: {{ .Values.service.port }}
       targetPort: http
   selector:
-    {{- include "conduwuit.labels" . | nindent 4 }}
+    {{- include "tuwunel.labels" . | nindent 4 }}
   type: {{ .Values.service.type }}
 
