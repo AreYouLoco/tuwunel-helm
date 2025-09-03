@@ -1,5 +1,5 @@
-# conduwuit
-This is a helm chart for [tuwunel][homepage] forked from [conduwuit][conduwuit]
+# tuwunel
+This is a helm chart for [tuwunel][homepage] forked from [conduwuit][conduwuit] helm chart
 
 ## TL;DR;
 ```console
@@ -28,8 +28,8 @@ The following tables lists the configurable parameters of the conduwuit chart an
 
 | Parameter                          | Description                                                                                | Default                 |
 | ---------------------------------- | ------------------------------------------------------------------------------------------ | ----------------------- |
-| `image.repository`                 | Image repository                                                                           | `girlbossceo/conduwuit` |
-| `image.tag`                        | Image tag. Possible values listed [here][docker].                                          | `next-commit-147f2752`  |
+| `image.repository`                 | Image repository                                                                           | `ghcr.io/matrix-construct/tuwunel` |
+| `image.tag`                        | Image tag. Possible values listed [here][docker].                                          | `latest`  |
 | `image.pullPolicy`                 | Image pull policy                                                                          | `IfNotPresent`          |
 | `config.server_name`               | Server name                                                                                | `your.server.name`      |
 | `config.max_request_size`          | Maximum upload size                                                                        | `20000000` (20MB)       |
