@@ -1,17 +1,17 @@
 # conduwuit
-This is a helm chart for [conduwuit][homepage]
+This is a helm chart for [tuwunel][homepage] forked from [conduwuit][conduwuit]
 
 ## TL;DR;
 ```console
-helm repo add cronce https://charts.cronce.io/
-helm install --set server_name=matrix.example.org cronce/conduwuit
+helm repo add cronce https://github.com/AreYouLoco/tuwunel-helm/
+helm install --set server_name=matrix.example.org AreYouLoco/tuwunel
 ```
 
 ## Installing the Chart
 To install the chart with the release name `my-release`:
 
 ```console
-helm install --name my-release cronce/conduwuit
+helm install --name my-release AreYouLoco/tuwunel
 ```
 
 ## Uninstalling the Chart
@@ -66,18 +66,18 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```console
 helm install --name my-release \
 	--set ingress.enabled=true \
-	cronce/conduwuit
+	AreYouLoco/tuwunel
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart. For example,
 
 ```console
-helm install --name my-release -f values.yaml cronce/conduwuit
+helm install --name my-release -f values.yaml AreYouLoco/tuwunel
 ```
 
 Read through the [values.yaml](values.yaml) file.
 
-[docker]: https://hub.docker.com/r/girlbossceo/conduwuit
-[github]: https://github.com/girlbossceo/conduwuit
-[homepage]: https://conduwuit.puppyirl.gay/
-
+[docker]: https://ghcr.io/matrix-construct/tuwunel:latest
+[github]: https://github.com/matrix-construct/tuwunel
+[homepage]: https://tuwunel.chat/
+[conduwuit]: https://gitlab.cronce.io/charts/conduwuit
