@@ -4,14 +4,14 @@ This is a helm chart for [tuwunel][homepage] forked from [conduwuit][conduwuit] 
 ## TL;DR;
 ```console
 helm repo add tuwunel https://github.com/AreYouLoco/tuwunel-helm/
-helm install --set server_name=matrix.example.org AreYouLoco/tuwunel
+helm install --set server_name=matrix.example.org tuwunel/tuwunel
 ```
 
 ## Installing the Chart
 To install the chart with the release name `my-release`:
 
 ```console
-helm install --name my-release AreYouLoco/tuwunel
+helm install --name my-release tuwunel/tuwunel
 ```
 
 ## Uninstalling the Chart
