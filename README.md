@@ -3,7 +3,7 @@ This is a helm chart for [tuwunel][homepage] forked from [conduwuit][conduwuit] 
 
 ## TL;DR;
 ```console
-helm repo add cronce https://github.com/AreYouLoco/tuwunel-helm/
+helm repo add tuwunel https://github.com/AreYouLoco/tuwunel-helm/
 helm install --set server_name=matrix.example.org AreYouLoco/tuwunel
 ```
 
