@@ -71,6 +71,10 @@ spec:
             - name: CONDUWUIT_ALLOW_FEDERATION
               value: "true"
             {{- end }}
+            {{- if .Values.config.registration_token }}
+            - name: TUWUNEL_REGISTRATION_TOKEN
+              value: {{ .Values.config.registration_token | quote }}
+            {{- end }}
             - name: CONDUWUIT_TRUSTED_SERVERS
               value: {{ mustToJson .Values.config.trusted_servers | quote }}
             - name: CONDUWUIT_ADDRESS

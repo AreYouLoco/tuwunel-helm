@@ -1,12 +1,14 @@
 image:
-  repository: girlbossceo/tuwunel
-  tag: "v0.4.3-d875e0c1c00d8e42b83dd562c3945c077898746d"
+  repository: ghcr.io/matrix-construct/tuwunel
+  tag: latest
   pullPolicy: IfNotPresent
 
 config:
-  server_name: "your.server.name"
+  server_name: "matrix.example.org"
   max_request_size: "20000000"
   allow_registration: false
+  # You must set registration token below to enable registrations
+  registration_token: "supa-dupa-secret-token"
   allow_federation: false
   trusted_servers: []
 
