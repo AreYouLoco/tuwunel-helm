@@ -1,6 +1,6 @@
 image:
   repository: ghcr.io/matrix-construct/tuwunel
-  tag: latest
+  tag: v1.4.1
   pullPolicy: IfNotPresent
 
 config:
