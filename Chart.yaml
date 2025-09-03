@@ -1,16 +1,16 @@
 apiVersion: v1
 appVersion: 0.4.3
-description: a very cool, featureful fork of Conduit
-name: conduwuit
+description: a very cool, featureful fork of Conduwuit
+name: tuwunel
 version: 0.1.0
 keywords:
-  - conduwuit
+  - tuwunel
   - matrix
   - homeserver
-home: https://github.com/girlbossceo/conduwuit
+home: https://github.com/AreYouLoco/tuwunel-helm
 sources:
-  - https://github.com/girlbossceo/conduwuit
-  - https://gitlab.cronce.io/charts/conduwuit
+  - https://github.com/AreYouLoco/tuwunel-helm
+  - https://github.com/matrix-construct/tuwunel
 maintainers:
-  - name: mcronce
-    email: mike@cronce.io
+  - name: AreYouLoco?
+    email: areyouloco@paranoici.org
