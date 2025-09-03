@@ -1,8 +1,8 @@
 apiVersion: v1
-appVersion: 0.4.3
+appVersion: v1.4.1
 description: a very cool, featureful fork of Conduwuit
 name: tuwunel
-version: 0.1.0
+version: 0.1.1
 keywords:
   - tuwunel
   - matrix
